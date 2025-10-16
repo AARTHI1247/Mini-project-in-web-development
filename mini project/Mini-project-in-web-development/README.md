@@ -1,2 +1,2 @@
 # Mini project in web development
-The Food order app's login page
+The Food order app
