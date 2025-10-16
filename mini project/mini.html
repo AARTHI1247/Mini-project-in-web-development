@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Order App</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="mini.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🍔 Food Order App</h1>
+    <form id="orderForm">
+      <label for="name">Name:</label>
+      <input id="name" type="text" placeholder="Enter your name" required />
+
+      <label for="item">Choose Food Item:</label>
+      <select id="item" required>
+        <option value="Pizza">Pizza</option>
+        <option value="Burger">Burger</option>
+        <option value="Pasta">Pasta</option>
+        <option value="Sandwich">Sandwich</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input id="quantity" type="number" min="1" max="10" value="1" required />
+
+      <button type="submit">Place Order</button>
+    </form>
+
+    <h2>Orders:</h2>
+    <ul id="orderList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
